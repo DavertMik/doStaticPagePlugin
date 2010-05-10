@@ -1,0 +1,10 @@
+StaticPage:
+  actAs:
+    Timestampable: ~
+    Sluggable:
+      unique: true
+      fields: [id,title]
+  columns:
+    title: { type: string(255) }
+    slug: {type: string(255), unique: true }
+    body: {type: blob }
