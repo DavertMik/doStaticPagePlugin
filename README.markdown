@@ -12,7 +12,17 @@ Features
 * Page has only 2 fields: title and body
 * Easily can be ported to the project and be extended.
 
-Requierments
+Requirements
 --------
 * Symfony 1.3-1.4
 * Doctrine
+
+Installation
+--------
+* Put this plugin  into /plugins folder
+* Enable plugin in ProjectConfiguration
+* Activate module 'content' for frontend
+* Activate module 'contentAdmin' for backend
+* Remove route '@default_index', that symfony has by default. Now a routes like '/page' will work
+
+If you need you can create your own content module. Right now it only has a 'Show' action.
